@@ -1,5 +1,4 @@
 import React from "react";
-import RewardCard from "./components/rewardCard";
 import { FaSeedling } from "react-icons/fa";
 import { SlGlobe } from "react-icons/sl";
 import { MdCurrencyExchange } from "react-icons/md";
@@ -7,8 +6,6 @@ import { ImLab } from "react-icons/im";
 import { RiExchangeFundsLine } from "react-icons/ri";
 import { BsBank, BsCreditCard2BackFill } from "react-icons/bs";
 import { PiFarm } from "react-icons/pi";
-import InvestmentCard from "./components/InvestmentCard";
-import Status from "./components/status";
 
 export default function Staking() {
   return (
@@ -136,7 +133,6 @@ export default function Staking() {
             <span className="grid justify-center items-center text-center">Real-world agricultural ventures as a core revenue source. Users can invest in or actively participate in farming projects, transforming agricultural potential into sustainable profits.</span>
           </div>
         </div>
-        <Status />
 
         <div className="flex justify-between items-center bg-gradient-to-l from-[#1e0e34] via-black-950 to-[#0d0417] my-2 p-6 rounded-3xl text-center shadow-lg border-2 border-purple-500">
           <p className="text-left pl-8">
@@ -146,13 +142,6 @@ export default function Staking() {
           <button className="bg-gradient-to-l from-[#4d1f8d] via-[#7c70c7] to-[#6051e7] hover:bg-purple-800 py-1 px-4 rounded-lg shadow-md">
             Withdrawals
           </button>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <InvestmentCard />
-          <RewardCard />
-          <RewardCard />
-          <RewardCard />
-          <RewardCard />
         </div>
       </section>
 
@@ -323,7 +312,7 @@ export default function Staking() {
               <span className="grid justify-center items-center text-gray-300 text-center">Farm team</span>
             </div>
           </div>
-          
+
         </div>
       </section>
 

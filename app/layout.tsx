@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from 'next/link';
 import { Geist, Geist_Mono } from "next/font/google";
 import { SiGitbook } from "react-icons/si";
 import { Cairo_Play } from "next/font/google"; // Import Cairo Play properly
@@ -43,12 +42,12 @@ export default function RootLayout({
             <img src="/images/Infinite Logo.png" alt="Logo" width={120} height={20} className="" />
           </div>
           <div className="flex justify-center items-center gap-4">
-            <span className="px-4 py-2 border border-black-600 rounded-lg hover:border-green-200 hover:scale-110 ease-out duration-500"><a href="#home">Home</a></span>
-            <span className="px-4 py-2 border border-black-600 rounded-lg hover:border-green-200 hover:scale-110 ease-out duration-500"><a href="#about">About us</a></span>
-            <span className="px-4 py-2 border border-black-600 rounded-lg hover:border-green-200 hover:scale-110 ease-out duration-500"><a href="#ecosystem">Ecosystem</a></span>
-            <span className="px-4 py-2 border border-black-600 rounded-lg hover:border-green-200 hover:scale-110 ease-out duration-500"><a href="#roadmap">Roadmap</a></span>
-            <span className="px-4 py-2 border border-black-600 rounded-lg hover:border-green-200 hover:scale-110 ease-out duration-500"><a href="#team_section">Our team</a></span>
-            <span className="flex justify-center items-center gap-1 px-4 py-2 border border-black-600 rounded-lg hover:border-green-200 hover:scale-110 ease-out duration-500"><SiGitbook className="text-xl" /><a href="#team_section" className="font-bold">Git Book</a></span>
+            <a href="#home" className="px-4 py-2 border border-black-600 rounded-lg hover:border-green-200 hover:scale-110 ease-out duration-500">Home</a>
+            <a href="#about" className="px-4 py-2 border border-black-600 rounded-lg hover:border-green-200 hover:scale-110 ease-out duration-500">About us</a>
+            <a href="#ecosystem" className="px-4 py-2 border border-black-600 rounded-lg hover:border-green-200 hover:scale-110 ease-out duration-500">Ecosystem</a>
+            <a href="#roadmap" className="px-4 py-2 border border-black-600 rounded-lg hover:border-green-200 hover:scale-110 ease-out duration-500">Roadmap</a>
+            <a href="#team_section" className="px-4 py-2 border border-black-600 rounded-lg hover:border-green-200 hover:scale-110 ease-out duration-500">Our team</a>
+            <a href="https://infinite-sprouts.gitbook.io/infinite-sprout" className="flex justify-center items-center gap-1 px-4 py-2 font-bold border border-black-600 rounded-lg hover:border-green-200 hover:scale-110 ease-out duration-500"><SiGitbook className="text-xl" />Git Book</a>
           </div>
         </nav>
         {children}
