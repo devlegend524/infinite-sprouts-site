@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { SiGitbook } from "react-icons/si";
 import { Cairo_Play } from "next/font/google"; // Import Cairo Play properly
 import "./globals.css";
+import Image from "next/image";
 
 // Import Geist Sans and Mono fonts
 const geistSans = Geist({
@@ -39,7 +40,7 @@ export default function RootLayout({
       >
         <nav className="flex justify-around items-center w-full shadow-lg h-20">
           <div>
-            <img src="/images/Infinite Logo.png" alt="Logo" width={120} height={20} className="" />
+            <Image src="/images/Infinite Logo.png" alt="Logo" width={120} height={20} className="" />
           </div>
           <div className="flex justify-center items-center gap-4">
             <a href="#home" className="px-4 py-2 border border-black-600 rounded-lg hover:border-green-200 hover:scale-110 ease-out duration-500">Home</a>
