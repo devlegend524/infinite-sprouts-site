@@ -32,3 +32,22 @@ body {
   background:
     radial-gradient(500px circle at center 90px, #1a2845, #0f1629, #10091b, #10091b, #170a29, #130822, #08040e, 65%, transparent 51%);
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+    /* Move by half the width of the duplicated content */
+  }
+}
+
+/* Apply the animation to the container */
+.animate-scroll {
+  animation: scroll 120s linear infinite;
+  /* Adjust duration for speed */
+  display: flex;
+  width: max-content;
+}
