@@ -37,7 +37,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${cairoPlay.variable} antialiased h-screen scroll-smooth`}
       >
-        <nav className="flex justify-around items-center w-full opacty-0.4 shadow-lg h-20">
+        <nav className="flex justify-around items-center w-full shadow-lg h-20">
           <div>
             <img src="/images/Infinite Logo.png" alt="Logo" width={120} height={20} className="" />
           </div>

@@ -6,6 +6,7 @@ import { ImLab } from "react-icons/im";
 import { RiExchangeFundsLine } from "react-icons/ri";
 import { BsBank, BsCreditCard2BackFill } from "react-icons/bs";
 import { PiFarm } from "react-icons/pi";
+import { FaGoogle, FaFacebookF, FaTwitter } from "react-icons/fa";
 
 export default function Staking() {
   return (
@@ -316,13 +317,15 @@ export default function Staking() {
         </div>
       </section>
 
-      <footer className="flex justify-around p-8 bg-black-900 h-200">
-        <div>
-          asdf
+      <footer className="flex justify-around p-6 bg-black-800">
+        <div className="flex items-center gap-4">
+          <a href="#home" className="p-2 border border-black-600 rounded-lg hover:border-green-200 hover:scale-125 ease-out duration-500"><FaGoogle className="text-2xl " /></a>
+          <a href="#home" className="p-2 border border-black-600 rounded-lg hover:border-green-200 hover:scale-125 ease-out duration-500"><FaFacebookF className="text-2xl " /></a>
+          <a href="#home" className="p-2 border border-black-600 rounded-lg hover:border-green-200 hover:scale-125 ease-out duration-500"><FaTwitter className="text-2xl " /></a>
         </div>
         <div></div>
-        <div>
-          45645
+        <div className="text-lg">
+          All rights reserved @infinite_sprouts 2024.
         </div>
       </footer>
     </div>
