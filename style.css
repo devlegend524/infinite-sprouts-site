@@ -51,6 +51,16 @@ body.light-theme {
 /* General Body Styles */
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
+  background-size: cover;
+  background:
+    radial-gradient(800px circle at center 10px, #042402, #031801, #021101, 35%, transparent 51%),
+    radial-gradient(800px circle at right center, #0b390f, #08290e, #051606, 36%, transparent 50.4%),
+    radial-gradient(1400px circle at 20px bottom, #073601, #033307, #022707, 36%, transparent 51%);
+  background-color: #000000;
+  /* Ensures the background covers the entire page */
+  background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* Light Theme Styles */
@@ -225,7 +235,7 @@ input:checked+.slider:before {
 .header {
   position: relative;
   top: 0;
-  height: 60px;
+  height: 80px;
   background-color: rgb(15, 15, 15);
   position: fixed;
   display: flex;
@@ -242,11 +252,11 @@ input:checked+.slider:before {
   right: 0;
   padding: 0;
   margin: 0;
-  margin-right: 5%;
+  margin-right: 8%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   width: 100%;
 }
 
@@ -255,7 +265,7 @@ input:checked+.slider:before {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
 }
 
 /*--SIGN UP BTN--*/
@@ -267,8 +277,8 @@ input:checked+.slider:before {
 }
 
 .logo img {
-  margin: 0;
-  height: 40px;
+  margin-left: 30px;
+  height: 50px;
 }
 
 .menu-icon {
@@ -634,11 +644,10 @@ h5 {
   text-decoration: none;
   color: #ffffff;
   /* Updated tech green for default text color */
-  padding: 10px 10px;
+  padding: 10px 20px;
   /* Reduced padding */
   border: var(--border);
-  border-radius: 10px;
-  background-image: linear-gradient(145deg, #333, var(--background-color));
+  border-radius: 6px;
 
   transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -655,10 +664,11 @@ h5 {
 /* Optional: Adjust Hover Style for Active Link */
 .header-content ul .nav-link:hover {
   color: #fff;
+  border: 1px solid lime;
   /* Keep text color on hover */
   background-color: rgba(0, 0, 0, 0.9);
   /* Darker background on hover */
-  transform: scale(1.03);
+  transform: scale(1.04);
   /* Scale effect on hover for active link */
 
 }
@@ -669,7 +679,6 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: rgb(0, 0, 0);
   flex-direction: column;
   box-sizing: border-box;
 }
@@ -754,10 +763,10 @@ body {
 }
 
 .main-content {
-  margin: 5%;
+  margin: 7%;
   display: flex;
   flex-direction: column;
-  margin-top: 150px;
+  margin-top: 180px;
   height: 100%;
   width: 100%;
   box-sizing: border-box;
@@ -1125,7 +1134,7 @@ body {
 .card-section {
   font-family: 'Courier New', Courier, monospace;
   width: 100vw;
-  height: 250px;
+  height: 340px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -1140,13 +1149,13 @@ body {
   display: flex;
   gap: 20px;
   width: max-content;
-  animation: movecards 40s linear infinite;
+  animation: movecards 60s linear infinite;
 }
 
 /* Individual Card Styles */
 .card {
-  width: 220px;
-  height: 200px;
+  width: 300px;
+  height: 220px;
   background: linear-gradient(135deg, black, rgb(15, 70, 15));
   display: flex;
   align-items: center;
@@ -1166,16 +1175,15 @@ body {
   }
 
   100% {
-    transform: translateX(40%);
+    transform: translateX(20%);
   }
 }
 
 /*----SCROLLABLE CARDS (2)---*/
 .second_scrollable_card {
   font-family: 'Courier New', Courier, monospace;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
+  padding: 280px;
+  width: 100%;
   /* height: 0px; */
   overflow: hidden;
   display: flex;
@@ -1193,7 +1201,6 @@ body {
 
 .second_card_container h1 {
   color: goldenrod;
-  width: 100%;
   text-align: center;
 }
 
@@ -1204,7 +1211,7 @@ body {
   display: flex;
   width: max-content;
   border: 1px solid lime;
-  animation: moveCardsReverse 40s linear infinite;
+  animation: moveCardsReverse 60s linear infinite;
 }
 
 .secondcard {
@@ -1300,9 +1307,7 @@ body {
 .About_section {
   font-family: 'Courier New', Courier, monospace;
   padding: 5%;
-  background: black;
   border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   position: relative;
   width: 100%;
   display: flex;
@@ -1313,7 +1318,7 @@ body {
 
 /* About Container */
 .about_container {
-  width: 100%;
+  width: 85%;
   gap: 2%;
   display: flex;
   flex-direction: row;
@@ -1327,6 +1332,7 @@ body {
   /* Bright tech green */
   font-size: 2.5em;
   margin-bottom: 30px;
+  margin-top: 15%;
   padding: 4px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1374,7 +1380,6 @@ body {
 .About_section .green {
   margin: 0;
   color: lime;
-  background: black;
 }
 
 .green:hover {
@@ -1513,9 +1518,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  padding-top: 10%;
   font-family: poppins;
-  background: black;
   padding: 4%;
   /* Added padding for spacing */
 }
@@ -1526,7 +1530,7 @@ body {
   /* Bright tech green */
   font-size: 2.5em;
   margin-bottom: 30px;
-  padding: 4px;
+  margin-top: 15%;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 15px;
@@ -1559,8 +1563,8 @@ body {
   overflow: hidden;
   border: var(--border);
   border-radius: 15px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+  transition: transform 0.5s, box-shadow 0.3s;
+  background: linear-gradient(45deg, rgba(7, 7, 7, 0.2), rgba(255, 255, 255, 0.1));
   /* Gradient with transparency */
 
 }
@@ -1568,7 +1572,7 @@ body {
 .ecosystem_section .ecosystem-card:hover {
   border: 1px solid lime;
   /* background-color:#007B50; Hover color */
-  transform: scale(1.01);
+  transform: scale(1.02);
   /* Scale effect on hover */
 }
 
@@ -1682,7 +1686,19 @@ body {
 }
 
 .team_heading h2 {
+  font-family: 'Courier New', Courier, monospace;
   color: lime;
+  /* Bright tech green */
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  margin-top: 5%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+  background: #000000;
+  border: 2px solid lime;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 8px 1px lime;
 }
 
 .content-info h2 {
@@ -1705,7 +1721,7 @@ body {
   align-items: center;
   border: 1px solid lime;
   /* New tech green */
-  background-image: linear-gradient(black, rgb(15, 70, 15), rgb(10, 10, 10));
+  background-image: linear-gradient(rgb(8, 7, 7), rgb(15, 70, 15), rgb(10, 9, 9));
   /* Darker gradient for cards */
   border-radius: 6px;
   height: 40%;
@@ -1883,15 +1899,16 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 80px;
   padding: 0;
-  border-radius: 12px;
   position: relative;
   /* To allow positioning of the logo */
   color: white;
   overflow: hidden;
   /* Ensure nothing overflows */
-  border: var(--border);
-  background: #111111;
+  box-shadow: #2196F3;
+  background-color: rgb(15, 15, 15);
+  box-shadow: 0 0 2px rgb(185, 172, 95);
 }
 
 /* Background Logo */
@@ -2047,25 +2064,21 @@ button.footer-label:hover {
   color: lime;
   /* Technical Green for contrast */
   width: 100%;
-  height: 46px;
+  height: 80px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   font-size: 14px;
   font-weight: 500;
 }
 
 .quick-links {
-  width: 36%;
+  width: 16%;
   margin: 0;
-  border-radius: 12px;
   margin-left: 50px;
-  margin-top: 20px;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  border: var(--border);
-  background: #020202;
 }
 
 .subscribe-now {
@@ -2209,4 +2222,13 @@ button.footer-label:hover {
   display: flex;
   flex-direction: row;
   nackground: red;
+}
+
+.backgorundColor {
+  background:
+    radial-gradient(800px circle at center 10px, #042402, #031801, #021101, 35%, transparent 51%),
+    radial-gradient(800px circle at right center, #0b390f, #08290e, #051606, 36%, transparent 50.4%),
+    radial-gradient(1400px circle at 20px bottom, #073601, #033307, #022707, 36%, transparent 51%);
+  background-color: #000000;
+  background-attachment: fixed;
 }
