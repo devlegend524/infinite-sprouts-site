@@ -51,16 +51,6 @@ body.light-theme {
 /* General Body Styles */
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
-  background-size: cover;
-  background:
-    radial-gradient(800px circle at center 10px, #042402, #031801, #021101, 35%, transparent 51%),
-    radial-gradient(800px circle at right center, #0b390f, #08290e, #051606, 36%, transparent 50.4%),
-    radial-gradient(1400px circle at 20px bottom, #073601, #033307, #022707, 36%, transparent 51%);
-  background-color: #000000;
-  /* Ensures the background covers the entire page */
-  background-attachment: fixed;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 /* Light Theme Styles */
@@ -644,7 +634,21 @@ h5 {
   text-decoration: none;
   color: #ffffff;
   /* Updated tech green for default text color */
-  padding: 10px 20px;
+  padding: 8px 12px;
+  /* Reduced padding */
+  border: var(--border);
+  border-radius: 6px;
+
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-content ul .goto {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #a9b3a7;
+  /* Updated tech green for default text color */
+  padding: 8px 12px;
   /* Reduced padding */
   border: var(--border);
   border-radius: 6px;
@@ -661,8 +665,29 @@ h5 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), 0 0 10px rgb(15, 70, 15);
 }
 
+/* Active Link Styling */
+.header-content ul .goto.active {
+  color: lime;
+  font-weight: 550;
+  border: 1px solid lime;
+  background: #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), 0 0 10px rgb(15, 70, 15);
+}
+
 /* Optional: Adjust Hover Style for Active Link */
 .header-content ul .nav-link:hover {
+  color: #fff;
+  border: 1px solid lime;
+  /* Keep text color on hover */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Darker background on hover */
+  transform: scale(1.04);
+  /* Scale effect on hover for active link */
+
+}
+
+/* Optional: Adjust Hover Style for Active Link */
+.header-content ul .goto:hover {
   color: #fff;
   border: 1px solid lime;
   /* Keep text color on hover */
@@ -972,7 +997,7 @@ body {
 /* 3D Container for the Card */
 .floating-message-card {
   position: absolute;
-  top: 60%;
+  top: 80%;
   /* Adjusted position */
   right: 10%;
   /* Distance from the right side */
@@ -1139,9 +1164,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 0;
   perspective: 1000px;
-  border-bottom: 1px solid lime;
 }
 
 /* Card Container */
@@ -1182,7 +1205,7 @@ body {
 /*----SCROLLABLE CARDS (2)---*/
 .second_scrollable_card {
   font-family: 'Courier New', Courier, monospace;
-  padding: 280px;
+  padding: 200px 0;
   width: 100%;
   /* height: 0px; */
   overflow: hidden;
@@ -2223,10 +2246,17 @@ button.footer-label:hover {
 }
 
 .backgorundColor {
+  --dot-bg: rgb(2, 2, 2);
+  --dot-color: white;
+  --dot-size: 1px;
+  --dot-space: 24px;
   background:
     radial-gradient(800px circle at center 10px, #042402, #031801, #021101, 35%, transparent 51%),
     radial-gradient(800px circle at right center, #0b390f, #08290e, #051606, 36%, transparent 50.4%),
-    radial-gradient(1400px circle at 20px bottom, #073601, #033307, #022707, 36%, transparent 51%);
-  background-color: #000000;
+    radial-gradient(1400px circle at 20px bottom, #073601, #033307, #022707, 36%, transparent 51%),
+    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
+  background-color: #00000056;
   background-attachment: fixed;
 }
