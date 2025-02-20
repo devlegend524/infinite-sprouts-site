@@ -51,6 +51,7 @@ body.light-theme {
 /* General Body Styles */
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
 }
 
 /* Light Theme Styles */
