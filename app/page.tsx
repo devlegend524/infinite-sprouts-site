@@ -7,6 +7,7 @@ import { RiExchangeFundsLine } from "react-icons/ri";
 import { BsBank, BsCreditCard2BackFill } from "react-icons/bs";
 import { PiFarm } from "react-icons/pi";
 import { FaGoogle, FaFacebookF, FaTwitter } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Staking() {
   return (
@@ -44,9 +45,10 @@ export default function Staking() {
             "images/card/istockphoto-1328823284-612x612.jpg",
             "images/card/istockphoto-874418310-612x612.jpg",
             "images/card/istockphoto-1385993880-612x612.jpg",].map((item, idx) => (
-              <img
+              <Image
                 key={idx}
                 src={item}
+                alt="scroll"
                 className={[
                   'cursor-pointer',
                   'rounded-2xl',
@@ -62,7 +64,7 @@ export default function Staking() {
             ))}
         </div>
         <div className="">
-          <img src="images/rice background img - Copy.png" alt="rice" className="h-[calc(100vh-5rem)] w-full opacity-20" />
+          <Image src="images/rice background img - Copy.png" alt="rice" className="h-[calc(100vh-5rem)] w-full opacity-20" />
         </div>
       </section>
 
@@ -180,7 +182,7 @@ export default function Staking() {
         <div className="flex grid grid-cols-5 gap-4">
           <div className="flex-y grid justify-center items-center bg-black-800  px-8 py-8 space-y-2 border border-black-600 hover:border-green-200 rounded-2xl hover:scale-105 ease-in-out duration-500">
             <span className="grid justify-center items-center">
-              <img src="https://pbs.twimg.com/profile_images/1867728052970487808/3Yt5t6nF_normal.jpg" alt="" className="w-60 h-50 border border-green-200 rounded-full" />
+              <Image src="https://pbs.twimg.com/profile_images/1867728052970487808/3Yt5t6nF_normal.jpg" alt="" className="w-60 h-50 border border-green-200 rounded-full" />
             </span>
             <div className="grid justify-center items-center text-xl font-bold text-gray-300 py-8">
               <span className="grid justify-center items-center text-green-200 text-center">Emmanuel Ali (Sprouts king)</span>
@@ -189,7 +191,7 @@ export default function Staking() {
           </div>
           <div className="flex-y grid justify-center items-center bg-black-800  px-8 py-8 space-y-2 border border-black-600 hover:border-green-200 rounded-2xl hover:scale-105 ease-in-out duration-500">
             <span className="grid justify-center items-center">
-              <img src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
+              <Image src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
             </span>
             <div className="grid justify-center items-center text-xl font-bold text-gray-300 py-8">
               <span className="grid justify-center items-center text-green-200 text-center">Richardson</span>
@@ -198,7 +200,7 @@ export default function Staking() {
           </div>
           <div className="flex-y grid justify-center items-center bg-black-800  px-8 py-8 space-y-2 border border-black-600 hover:border-green-200 rounded-2xl hover:scale-105 ease-in-out duration-500">
             <span className="grid justify-center items-center">
-              <img src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
+              <Image src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
             </span>
             <div className="grid justify-center items-center text-xl font-bold text-gray-300 py-8">
               <span className="grid justify-center items-center text-green-200 text-center">Stunner Jr</span>
@@ -207,7 +209,7 @@ export default function Staking() {
           </div>
           <div className="flex-y grid justify-center items-center bg-black-800  px-8 py-8 space-y-2 border border-black-600 hover:border-green-200 rounded-2xl hover:scale-105 ease-in-out duration-500">
             <span className="grid justify-center items-center">
-              <img src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
+              <Image src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
             </span>
             <div className="grid justify-center items-center text-xl font-bold text-gray-300 py-8">
               <span className="grid justify-center items-center text-green-200 text-center">George (Zannakonda)</span>
@@ -216,7 +218,7 @@ export default function Staking() {
           </div>
           <div className="flex-y grid justify-center items-center bg-black-800  px-8 py-8 space-y-2 border border-black-600 hover:border-green-200 rounded-2xl hover:scale-105 ease-in-out duration-500">
             <span className="grid justify-center items-center">
-              <img src="images/avatar.jpg" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
+              <Image src="images/avatar.jpg" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
             </span>
             <div className="grid justify-center items-center text-xl font-bold text-gray-300 py-8">
               <span className="grid justify-center items-center text-green-200 text-center">Legend</span>
@@ -225,7 +227,7 @@ export default function Staking() {
           </div>
           <div className="flex-y grid justify-center items-center bg-black-800  px-8 py-8 space-y-2 border border-black-600 hover:border-green-200 rounded-2xl hover:scale-105 ease-in-out duration-500">
             <span className="grid justify-center items-center">
-              <img src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
+              <Image src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
             </span>
             <div className="grid justify-center items-center text-xl font-bold text-gray-300 py-8">
               <span className="grid justify-center items-center text-green-200 text-center">Jonathan Philip</span>
@@ -234,7 +236,7 @@ export default function Staking() {
           </div>
           <div className="flex-y grid justify-center items-center bg-black-800  px-8 py-8 space-y-2 border border-black-600 hover:border-green-200 rounded-2xl hover:scale-105 ease-in-out duration-500">
             <span className="grid justify-center items-center">
-              <img src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
+              <Image src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
             </span>
             <div className="grid justify-center items-center text-xl font-bold text-gray-300 py-8">
               <span className="grid justify-center items-center text-green-200 text-center">Zach</span>
@@ -243,7 +245,7 @@ export default function Staking() {
           </div>
           <div className="flex-y grid justify-center items-center bg-black-800  px-8 py-8 space-y-2 border border-black-600 hover:border-green-200 rounded-2xl hover:scale-105 ease-in-out duration-500">
             <span className="grid justify-center items-center">
-              <img src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
+              <Image src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
             </span>
             <div className="grid justify-center items-center text-xl font-bold text-gray-300 py-8">
               <span className="grid justify-center items-center text-green-200 text-center">Advisors</span>
@@ -252,7 +254,7 @@ export default function Staking() {
           </div>
           <div className="flex-y grid justify-center items-center bg-black-800  px-8 py-8 space-y-2 border border-black-600 hover:border-green-200 rounded-2xl hover:scale-105 ease-in-out duration-500">
             <span className="grid justify-center items-center">
-              <img src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
+              <Image src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
             </span>
             <div className="grid justify-center items-center text-xl font-bold text-gray-300 Advisorspy-8">
               <span className="grid justify-center items-center text-green-200 text-center">Advisors</span>
@@ -261,7 +263,7 @@ export default function Staking() {
           </div>
           <div className="flex-y grid justify-center items-center bg-black-800  px-8 py-8 space-y-2 border border-black-600 hover:border-green-200 rounded-2xl hover:scale-105 ease-in-out duration-500">
             <span className="grid justify-center items-center">
-              <img src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
+              <Image src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
             </span>
             <div className="grid justify-center items-center text-xl font-bold text-gray-300 py-8">
               <span className="grid justify-center items-center text-green-200 text-center">Advisory</span>
@@ -270,7 +272,7 @@ export default function Staking() {
           </div>
           <div className="flex-y grid justify-center items-center bg-black-800  px-8 py-8 space-y-2 border border-black-600 hover:border-green-200 rounded-2xl hover:scale-105 ease-in-out duration-500">
             <span className="grid justify-center items-center">
-              <img src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
+              <Image src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
             </span>
             <div className="grid justify-center items-center text-xl font-bold text-gray-300 py-8">
               <span className="grid justify-center items-center text-green-200 text-center">Marketing team</span>
@@ -279,7 +281,7 @@ export default function Staking() {
           </div>
           <div className="flex-y grid justify-center items-center bg-black-800  px-8 py-8 space-y-2 border border-black-600 hover:border-green-200 rounded-2xl hover:scale-105 ease-in-out duration-500">
             <span className="grid justify-center items-center">
-              <img src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
+              <Image src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
             </span>
             <div className="grid justify-center items-center text-xl font-bold text-gray-300 py-8">
               <span className="grid justify-center items-center text-green-200 text-center">Marketing team</span>
@@ -288,7 +290,7 @@ export default function Staking() {
           </div>
           <div className="flex-y grid justify-center items-center bg-black-800  px-8 py-8 space-y-2 border border-black-600 hover:border-green-200 rounded-2xl hover:scale-105 ease-in-out duration-500">
             <span className="grid justify-center items-center">
-              <img src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
+              <Image src="images/NFT..4432.png" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
             </span>
             <div className="grid justify-center items-center text-xl font-bold text-gray-300 py-8">
               <span className="grid justify-center items-center text-green-200 text-center">Social manager</span>
@@ -297,7 +299,7 @@ export default function Staking() {
           </div>
           <div className="flex-y grid justify-center items-center bg-black-800  px-8 py-8 space-y-2 border border-black-600 hover:border-green-200 rounded-2xl hover:scale-105 ease-in-out duration-500">
             <span className="grid justify-center items-center">
-              <img src="images/defaultuser.webp" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
+              <Image src="images/defaultuser.webp" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
             </span>
             <div className="grid justify-center items-center text-xl font-bold text-gray-300 py-8">
               <span className="grid justify-center items-center text-green-200 text-center">Mike Gambo</span>
@@ -306,7 +308,7 @@ export default function Staking() {
           </div>
           <div className="flex-y grid justify-center items-center bg-black-800  px-8 py-8 space-y-2 border border-black-600 hover:border-green-200 rounded-2xl hover:scale-105 ease-in-out duration-500">
             <span className="grid justify-center items-center">
-              <img src="images/defaultuser.webp" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
+              <Image src="images/defaultuser.webp" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
             </span>
             <div className="grid justify-center items-center text-xl font-bold text-gray-300 py-8">
               <span className="grid justify-center items-center text-green-200 text-center">Gideon Peter</span>
@@ -315,7 +317,7 @@ export default function Staking() {
           </div>
           <div className="flex-y grid justify-center items-center bg-black-800  px-8 py-8 space-y-2 border border-black-600 hover:border-green-200 rounded-2xl hover:scale-105 ease-in-out duration-500">
             <span className="grid justify-center items-center">
-              <img src="images/defaultuser.webp" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
+              <Image src="images/defaultuser.webp" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
             </span>
             <div className="grid justify-center items-center text-xl font-bold text-gray-300 py-8">
               <span className="grid justify-center items-center text-green-200 text-center">Isaac (ice)</span>
@@ -324,7 +326,7 @@ export default function Staking() {
           </div>
           <div className="flex-y grid justify-center items-center bg-black-800  px-8 py-8 space-y-2 border border-black-600 hover:border-green-200 rounded-2xl hover:scale-105 ease-in-out duration-500">
             <span className="grid justify-center items-center">
-              <img src="images/defaultuser.webp" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
+              <Image src="images/defaultuser.webp" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
             </span>
             <div className="grid justify-center items-center text-xl font-bold text-gray-300 py-8">
               <span className="grid justify-center items-center text-green-200 text-center">Nomsu Eli</span>
@@ -333,7 +335,7 @@ export default function Staking() {
           </div>
           <div className="flex-y grid justify-center items-center bg-black-800  px-8 py-8 space-y-2 border border-black-600 hover:border-green-200 rounded-2xl hover:scale-105 ease-in-out duration-500">
             <span className="grid justify-center items-center">
-              <img src="images/defaultuser.webp" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
+              <Image src="images/defaultuser.webp" alt="" className="w-30 h-30 border border-green-200 rounded-full" />
             </span>
             <div className="grid justify-center items-center text-xl font-bold text-gray-300 py-8">
               <span className="grid justify-center items-center text-green-200 text-center">Ezra Luka</span>
