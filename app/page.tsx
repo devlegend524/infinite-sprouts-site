@@ -78,7 +78,7 @@ export default function Staking() {
               <FaSeedling className="text-green-200" />
             </span>
             <h3 className="mb-1 text-xl font-semibold text-gray-300">Question 1: <span className="text-green-400 text-lg font-medium me-2 px-2.5 py-0.5 rounded-sm">What really is infinie sprouts?</span></h3>
-            <p className="mb-4 text-xl font-normal text-gray-500 dark:text-gray-400">Infinite Sprouts is a visionary ecosystem that is expanding the scope and scale of agriculture. introducing social networking connecting farmer's, global agricultural market, new trading era with crop token, flexible investment ecosystem and open source farm practices for a more efficient agriculture, a home for farmer's, trader's and investor's bringing agriculture on chain, a place of limitless opportunities.</p>
+            <p className="mb-4 text-xl font-normal text-gray-500 dark:text-gray-400">Infinite Sprouts is a visionary ecosystem that is expanding the scope and scale of agriculture. introducing social networking connecting farmer`s, global agricultural market, new trading era with crop token, flexible investment ecosystem and open source farm practices for a more efficient agriculture, a home for farmer`s, trader`s and investor`s bringing agriculture on chain, a place of limitless opportunities.</p>
           </li>
           <li className="mb-10 ms-7">
             <span className="absolute flex items-center justify-center w-7 h-7 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
